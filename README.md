@@ -13,3 +13,5 @@ List of the files and their purposes:
 5-binary_tree_is_root.c -> checks if a given node is a root.
 
 6-binary_tree_preorder.c -> goes through a binary tree using pre-order traversal.
+
+7-binary_tree_inorder.c -> goes through a binary tree using in-order traversal.
