@@ -23,3 +23,5 @@ List of the files and their purposes:
 10-binary_tree_depth.c -> measures the depth of a node in a binary tree.
 
 11-binary_tree_size.c -> measures the size of a binary tree.
+
+12-binary_tree_leaves.c -> counts the leaves in a binary tree.

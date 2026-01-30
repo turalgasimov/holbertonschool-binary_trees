@@ -4,7 +4,7 @@
  * binary_tree_size - entry point
  * @tree: root
  *
- * Return: depth
+ * Return: size
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
