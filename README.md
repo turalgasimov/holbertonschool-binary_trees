@@ -17,3 +17,5 @@ List of the files and their purposes:
 7-binary_tree_inorder.c -> goes through a binary tree using in-order traversal.
 
 8-binary_tree_postorder.c -> goes through a binary tree using post-order traversal.
+
+9-binary_tree_height.c -> measures the height of a binary tree.
