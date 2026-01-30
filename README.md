@@ -27,3 +27,5 @@ List of the files and their purposes:
 12-binary_tree_leaves.c -> counts the leaves in a binary tree.
 
 13-binary_tree_nodes.c -> counts the nodes with at least 1 child in a binary tree.
+
+14-binary_tree_balance.c -> measures the balance factor of a binary tree.
