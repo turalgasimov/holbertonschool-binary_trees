@@ -4,7 +4,7 @@
  * binary_tree_balance - entry point
  * @tree: root
  *
- * Return: leaves
+ * Return: balance factor
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
@@ -19,5 +19,5 @@ int binary_tree_balance(const binary_tree_t *tree)
 	lh = binary_tree_balance(tree->left);
 	rh = binary_tree_balance(tree->right);
 
-	return (lh - rh);
+	return ((1 + rh - lh) / 2);
 }
