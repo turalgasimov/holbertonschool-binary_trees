@@ -1,6 +1,46 @@
 #include "binary_trees.h"
 
 /**
+ * depth - entry point
+ * @tree: root
+ *
+ * Return: d
+ */
+int depth(binary_tree_t *tree)
+{
+	int left, right;
+
+	if (tree == NULL)
+		return (0);
+
+	left = depth(tree->left);
+	right = depth(tree->right);
+	return (1 + (left > right ? left : right));
+}
+
+/**
+ * isPerfectRecur - entry point
+ * @tree: root
+ * @d: depth
+ *
+ * Return: d
+ */
+int isPerfectRecur(binary_tree_t *tree, int d)
+{
+	if (tree == NULL)
+		return (0);
+
+	if (tree->left == NULL && tree->right == NULL)
+		return (d == 1);
+
+	if (tree->left == NULL || tree->right == NULL)
+		return (0);
+
+	return (isPerfectRecur(tree->left, d - 1)
+		&& isPerfectRecur(tree->right, d - 1));
+}
+
+/**
  * binary_tree_is_perfect - entry point
  * @tree: root
  *
@@ -8,14 +48,8 @@
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	if (!tree)
-		return (0);
+	int d;
 
-	if (!tree->left && !tree->right)
-		return (1);
-
-	if (tree->left && tree->right)
-		return (binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right));
-
-	return (0);
+	d = depth(tree);
+	return (isPerfectRecur(tree, d));
 }
