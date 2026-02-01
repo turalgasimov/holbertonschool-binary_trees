@@ -6,7 +6,7 @@
  *
  * Return: d
  */
-int depth(binary_tree_t *tree)
+int depth(const binary_tree_t *tree)
 {
 	int left, right;
 
@@ -25,7 +25,7 @@ int depth(binary_tree_t *tree)
  *
  * Return: d
  */
-int isPerfectRecur(binary_tree_t *tree, int d)
+int isPerfectRecur(const binary_tree_t *tree, int d)
 {
 	if (tree == NULL)
 		return (0);
