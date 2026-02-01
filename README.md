@@ -33,3 +33,7 @@ List of the files and their purposes:
 15-binary_tree_is_full.c -> checks if a binary tree is full.
 
 16-binary_tree_is_perfect.c -> checks if a binary tree is perfect.
+
+17-binary_tree_sibling.c -> finds the sibling of a node.
+
+18-binary_tree_uncle.c -> finds the uncle of a node.
